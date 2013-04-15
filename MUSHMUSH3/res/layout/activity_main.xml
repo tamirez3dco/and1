@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout 
+	android:layout_width="fill_parent" 
+	android:layout_height="fill_parent" 
+	xmlns:android="http://schemas.android.com/apk/res/android">
+	    
+	<GridView 
+    android:id="@+id/thegrid"
+    android:layout_width="fill_parent" 
+    android:layout_height="fill_parent"
+    android:numColumns="4"
+    android:verticalSpacing="10dp"
+    android:horizontalSpacing="10dp"
+    android:stretchMode="columnWidth"
+    android:gravity="center"
+	/>
+
+	<LinearLayout
+	    android:id="@+id/mainvertical" 
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:orientation="vertical"
+    	android:scaleType="fitXY"
+	    android:visibility="invisible">
+		
+		<LinearLayout
+	    	android:layout_width="fill_parent"
+	    	android:layout_height="wrap_content"
+	    	android:orientation="horizontal"
+    		android:scaleType="fitXY">
+    		<Button
+    		    android:background="@drawable/button_custom"
+    			android:textColor="@android:color/black"
+     			android:layout_height="fill_parent"
+     			android:layout_width="wrap_content"
+     			android:text="Save Image"
+     			android:onClick="setImageClicked" />
+    		<Button
+    		    android:background="@drawable/button_custom"
+    			android:textColor="@android:color/black"
+     			android:layout_height="fill_parent"
+     			android:layout_width="wrap_content"
+     			android:text="Set Text"
+     			android:onClick="setTextClicked" />
+    		<Button
+    		    android:background="@drawable/button_custom"
+    			android:textColor="@android:color/black"
+     			android:layout_height="fill_parent"
+     			android:layout_width="wrap_content"
+     			android:text="delete"
+     			android:onClick="deleteClicked" />
+    		<Button
+    		    android:background="@drawable/button_custom"
+    			android:textColor="@android:color/black"
+     			android:layout_height="fill_parent"
+     			android:layout_width="wrap_content"
+     			android:text="New"
+     			android:onClick="newClicked" />
+    		<Button
+    		    android:background="@drawable/button_custom"
+    			android:textColor="@android:color/black"
+     			android:layout_height="fill_parent"
+     			android:layout_width="wrap_content"
+     			android:text="Close"
+     			android:onClick="setCloseClicked" />
+    	</LinearLayout>
+	    	        
+		<ImageView
+		    android:id="@+id/mainimage" 
+	    	android:layout_width="fill_parent"
+	    	android:layout_height="fill_parent"
+	    	android:adjustViewBounds="true"
+	    	android:scaleType="fitXY"
+	    	android:src="@drawable/ic_launcher"
+	    	android:clickable="true"/>
+		<EditText 
+		    android:id="@+id/maintext" 
+		    android:adjustViewBounds="true"
+	    	android:layout_width="fill_parent"
+	    	android:layout_height="fill_parent"
+	    	android:scaleType="fitXY"
+	    	android:textSize="100px"
+	    	android:text="BARDAK"/>
+		<LinearLayout
+	    	android:layout_width="fill_parent"
+	    	android:layout_height="wrap_content"
+	    	android:orientation="horizontal"
+    		android:scaleType="fitXY">
+    		<ToggleButton
+    		    android:id="@+id/button_record_start_stop"
+    		    android:background="@drawable/button_sst"
+    			android:textColor="@color/text_color"
+     			android:layout_height="fill_parent"
+     			android:layout_width="wrap_content"
+     			android:checked="false"
+     			android:textOff="Record"
+     			android:textOn="Stop"
+     			android:onClick="recordClicked" />
+    		<Button
+    		    android:id="@+id/button_play"
+    		    android:background="@drawable/button_custom"
+    			android:textColor="@color/text_color"
+     			android:layout_height="fill_parent"
+     			android:layout_width="wrap_content"
+     			android:text="Play"
+     			android:onClick="playClicked" />
+    		<Button
+    		    android:id="@+id/button_save"
+    		    android:background="@drawable/button_custom"
+    			android:textColor="@color/text_color"
+     			android:layout_height="fill_parent"
+     			android:layout_width="wrap_content"
+     			android:text="Save"
+     			android:onClick="saveClicked" />
+    	</LinearLayout>
+	</LinearLayout>
+
+</FrameLayout>
+
+
+
