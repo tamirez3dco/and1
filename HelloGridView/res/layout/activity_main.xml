@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout 
+	android:layout_width="fill_parent" 
+	android:layout_height="fill_parent" 
+	xmlns:android="http://schemas.android.com/apk/res/android">
+	    
+	<GridView 
+    android:id="@+id/thegrid"
+    android:layout_width="fill_parent" 
+    android:layout_height="fill_parent"
+    android:numColumns="4"
+    android:verticalSpacing="10dp"
+    android:horizontalSpacing="10dp"
+    android:stretchMode="columnWidth"
+    android:gravity="center"
+	/>
+
+	<LinearLayout
+	    android:id="@+id/mainvertical" 
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:orientation="vertical"
+    	android:scaleType="fitXY"
+	    android:visibility="invisible">
+		<ImageView
+		    android:id="@+id/mainimage" 
+	    	android:layout_width="fill_parent"
+	    	android:layout_height="fill_parent"
+	    	android:adjustViewBounds="true"
+	    	android:scaleType="fitXY"
+	    	android:src="@drawable/ic_launcher"/>
+		<TextView 
+		    android:id="@+id/maintext" 
+		    android:adjustViewBounds="true"
+	    	android:layout_width="fill_parent"
+	    	android:layout_height="fill_parent"
+	    	android:scaleType="fitXY"
+	    	android:textSize="100px"
+	    	android:text="BARDAK"/>
+	</LinearLayout>
+
+</FrameLayout>
+
+
+
